@@ -64,7 +64,7 @@
 }
 
 #card-content {
-	padding: 21.5px;
+	padding: 21px;
 }
 
 #card-content .product {
@@ -76,14 +76,14 @@
     color: hsl(212, 21%, 14%);
 	font-family: fraunces;
 	font-size: 32px;
-	margin: 21.5px 0;
+	margin: 21px 0;
 }
 
 #card-content .product-price {
 	color: hsl(158, 36%, 37%);
 	font-family: fraunces;
 	font-size: 32px;
-	margin: 21.5px 0;
+	margin: 21px 0;
 }
 
 #card-content .product-price s{
