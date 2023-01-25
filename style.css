@@ -1,0 +1,133 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: montserrat-bold;
+	font-size: 14px;
+}
+
+@font-face {
+	font-family: montserrat;
+	src: url(./fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+	font-family: montserrat-bold;
+	src: url(./fonts/Montserrat-Bold.ttf);
+}
+
+@font-face {
+	font-family: fraunces;
+	src: url(./fonts/Fraunces_72pt-Bold.ttf);
+}
+
+#container {
+	height: auto;
+	min-height: 100vh;
+	position: relative;
+	background-color: hsl(30, 38%, 92%);
+}
+
+#card {
+	background-color: #fff;
+	position: absolute;
+	margin: auto;
+    top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: fit-content;
+	width: 550px;
+	border-radius: 12px;
+	color: hsl(228, 12%, 48%);
+}
+
+#card::after {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+#card > * {
+	float: left;
+	width: 50%;
+}
+
+#card-img {
+    display: block;
+	border-radius: 12px 0 0 12px;
+}
+
+#m-card-img {
+    width: 100%;
+    display: none;
+}
+
+#card-content {
+	padding: 21.5px;
+}
+
+#card-content .product {
+	text-transform: uppercase;
+	letter-spacing: 4px;
+}
+
+#card-content .product-name {
+    color: hsl(212, 21%, 14%);
+	font-family: fraunces;
+	font-size: 32px;
+	margin: 21.5px 0;
+}
+
+#card-content .product-price {
+	color: hsl(158, 36%, 37%);
+	font-family: fraunces;
+	font-size: 32px;
+	margin: 21.5px 0;
+}
+
+#card-content .product-price s{
+    color: hsl(228, 12%, 48%);
+}
+
+#card-content .add-to-cart-btn {
+	width: 100%;
+	border: none;
+	border-radius: 6px;
+	color: #fff;
+	padding: 12px;
+	background-color: hsl(158, 36%, 37%);
+	cursor: pointer;
+}
+
+#card-content .add-to-cart-btn:active {
+	background-color: hsl(158, 36%, 19%);
+}
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 600px){
+#card {
+    width: 345px;
+}
+
+    #card > * {
+        width: 100%;
+    }
+
+    #card-img {
+        display: none;
+    }
+
+    #m-card-img {
+        display: block;
+        border-radius: 12px 12px 0 0;
+    }
+}
